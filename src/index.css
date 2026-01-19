@@ -8,8 +8,8 @@ body, html {
 }
 
 svg {
-  width: 22px;
-  height: 22px;
+  width: 2vw;
+  height: 3vh;
 }
 
 @theme {
@@ -21,6 +21,7 @@ svg {
     --color-bgdark3: #211f1f;
     --color-ligthbrown: #efdbc0;
     --color-mediumbrown: #3c362f;
+    --color-darkbrown: #3c3730;
 }
 
 /* .div-profile {
