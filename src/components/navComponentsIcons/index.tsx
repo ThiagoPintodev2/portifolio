@@ -1,6 +1,6 @@
-import type { NavComponentesProps } from "./navcomponentsProps";
+import type { MenuNavProps } from "./MenuNavProps";
 
-function NavComponentesIcons({ value, img }: NavComponentesProps) {
+function NavComponentesIcons({ value, img }: MenuNavProps) {
   return (
     <div className={`flex flex-col w-[9rem] items-center h-[9rem] justify-center bg-bgdark3 rounded-2xl bg-ligthbrown`}>
       {img}

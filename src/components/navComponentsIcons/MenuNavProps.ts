@@ -1,6 +1,6 @@
 import type { ReactElement } from "react"
 
-export type NavComponentesProps = {
+export type MenuNavProps = {
     value: string,
     img: ReactElement
 }
