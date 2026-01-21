@@ -1,14 +1,13 @@
 import profileImage from "@/assets/profileImage.jpg";
 import { Button } from "@/components/ui/button";
-import { TfiFacebook } from "react-icons/tfi";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import ContactSection from "../ContactSection";
 
 function ProfileAside() {
   const socialMediaData = [
     {
-      SocialMediaIcon: <TfiFacebook size={30} />,
+      SocialMediaIcon: <FaInstagram />,
     },
     {
       SocialMediaIcon: <FaLinkedinIn />,
@@ -20,7 +19,7 @@ function ProfileAside() {
 
   return (
     <div
-      className={`flex flex-col w-[40vw] bg-[#232120] rounded-3xl items-center`}
+      className={`flex flex-col w-[90vw] bg-[#232120] rounded-3xl items-center md:text-[40rem]`}
     >
       <div>
         <img
@@ -30,11 +29,11 @@ function ProfileAside() {
         />
       </div>
       <div className={`flex flex-col items-center justify-center`}>
-        <p className={`font-poppins text-[2vw] mt-[3.6rem] text-ligthbrown`}>
+        <p className={`font-poppins text-[3rem] mt-[3.6rem] text-ligthbrown`}>
           Thiago da Silva
         </p>
         <p
-          className={`font-poppins text-[1vw] mt-[1rem] text-ligthbrown font-extralight`}
+          className={`font-poppins text-[1.9rem] mt-[1rem] text-ligthbrown font-extralight`}
         >
           Front End Developer
         </p>
@@ -44,12 +43,12 @@ function ProfileAside() {
           <Button
             className={
               i === 0
-                ? `w-[33%] h-[70%] flex items-center justify-center bg-[#1f1d1d] 
+                ? `w-[33%] h-[60%] flex items-center justify-center bg-[#1f1d1d] 
                 rounded-l-3xl border border-white/5 shadow-xl/20 cursor-pointer`
                 : i === 2
-                  ? `w-[33%] h-[70%]  flex items-center justify-center bg-[#1f1d1d] 3
+                  ? `w-[33%] h-[60%]  flex items-center justify-center bg-[#1f1d1d] 3
                   rounded-r-3xl border border-white/5 shadow-xl/20 cursor-pointer`
-                  : `w-[33%] h-[70%] flex items-center justify-center bg-[#1f1d1d] 
+                  : `w-[33%] h-[60%] flex items-center justify-center bg-[#1f1d1d] 
                   rounded-l-3xl border border-white/5 rounded-md shadow-xl/20 cursor-pointer`
             }
           >

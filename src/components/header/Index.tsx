@@ -11,7 +11,7 @@ function Header() {
         {"< Hello, I'm Thiago />"}
       </div>
       <div
-        className={`flex gap-8 w-[100%] justify-center mt-[2rem] items-center bg-bgdark2`}
+        className={`flex gap-8 w-[33rem] h-[10vh] justify-center mt-[2rem] rounded-3xl items-center bg-bgdark2 `}
       >
         <NavComponentesIcons value={"Home"} img={<PiHouseLine size={15} />} />
         <NavComponentesIcons value={"Resume"} img={<LuBookAudio size={15} />} />

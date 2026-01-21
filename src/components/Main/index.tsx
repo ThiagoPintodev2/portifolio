@@ -3,11 +3,13 @@ import ProfileAside from "./ProfileAside";
 
 function Main() {
   return (
-    <div className="flex text-black gap-10 w-[80%] m-auto mt-70">
+    <div className="flex text-black gap-10 w-[33rem] m-auto mt-50 sm:w-[50rem]">
+
       <ProfileAside />
-      <AboutMeSection />
+      {/* <AboutMeSection /> */}   
     </div>
   );
 }
 
 export default Main;
+ 
