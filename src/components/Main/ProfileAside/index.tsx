@@ -4,6 +4,7 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import ContactSection from "../ContactSection";
 
+
 function ProfileAside() {
   const socialMediaData = [
     {
@@ -56,9 +57,9 @@ function ProfileAside() {
           </Button>
         ))}
       </div>
-       <div className={`w-[90%]`}>
+      <div className={`flex flex-col w-[90%] items-center`}>
         <ContactSection />
-       </div>
+      </div>
     </div>
   );
 }
