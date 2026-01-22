@@ -1,3 +1,4 @@
+import TecnologysSection from "../TecnologysSection";
 import AboutMeSection from "./AboutMeSection";
 import ProfileAside from "./ProfileAside";
 
@@ -7,6 +8,7 @@ function Main() {
       <div className={`flex flex-col`}>
         <ProfileAside />
         <AboutMeSection />
+        <TecnologysSection />
       </div>
     </div>
   );

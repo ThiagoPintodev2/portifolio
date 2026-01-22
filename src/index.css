@@ -16,6 +16,10 @@
   --breakpoint-3xl: 55rem;
 }
 
+.div-about-me {
+  @apply flex flex-col w-[30rem] mt-[2rem] bg-[#232120] m-auto pb-10 rounded-3xl items-center min-[480px]:w-[40rem];
+}
+
 body,
 html {
   font-size: 62.5%;
@@ -26,6 +30,3 @@ svg {
   height: 23px;
 }
 
-/* .div-profile {
-  @apply bg-bgdark2 border border-zinc-800 rounded-xl p-6 shadow-md;
-} */
