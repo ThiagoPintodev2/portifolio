@@ -1,6 +1,6 @@
 function TecnologysSection() {
   return (
-    <div className={`div-about-me`}>
+    <div className={`div-about-me bg-[#232120]`}>
       <div className={`flex flex-col items-center`}>
         <h2 className={`font-poppins text-[3.2rem] text-ligthbrown m-[1rem]`}>
           WHAT I DO
@@ -22,6 +22,9 @@ function TecnologysSection() {
           trabalhar juntas para resolver problemas e proporcionar ao usuário
           final, uma ótima experiência"
         </p>
+      </div>
+      <div>
+        Tecnologias
       </div>
     </div>
   );

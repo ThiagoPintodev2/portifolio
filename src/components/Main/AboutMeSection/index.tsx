@@ -1,15 +1,15 @@
 function AboutMeSection() {
   return (
-    <div className={`div-about-me`}>
+    <div className={`div-about-me bg-ligthbrown`}>
       <div className={`flex flex-col items-center`}>
-        <h2 className={`font-poppins text-[3.2rem] text-ligthbrown m-[1rem]`}>
+        <h2 className={`font-poppins text-[3.2rem] text-[#232120] m-[1rem]`}>
           ABOUT ME
         </h2>
-        <hr className={`bg-white w-[12rem]`} />
+        <hr className={`bg-[#232120] h-[2px] w-[12rem]`} />
       </div>
       <div>
         <p
-          className={`font-raleway text-[1.6rem] p-[2rem] text-center text-ligthbrown`}
+          className={`font-raleway text-[1.6rem] p-[2rem] text-center text-[#232120]`}
         >
           Novo na área de tenclogia e em constante evolução. Recentemente, fiz
           uma transição de carreira de Educação Física para o universo da
