@@ -20,7 +20,7 @@ function ProfileAside() {
 
   return (
     <div
-      className={`flex flex-col w-[30rem] mt-[1rem] bg-[#232120] m-auto pb-10 rounded-3xl items-center min-[480px]:w-[40rem] sm:w-[50rem] md:w-[60rem]`}
+      className={`flex flex-col w-[30rem] mt-[1rem] mb-[2rem] bg-[#232120] m-auto pb-10 rounded-3xl items-center min-[480px]:w-[40rem] sm:w-[50rem] md:w-[60rem]`}
     >
       <div>
         <img
