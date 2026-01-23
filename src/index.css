@@ -17,7 +17,7 @@
 }
 
 .div-about-me {
-  @apply flex flex-col w-[30rem] mt-[2rem] m-auto rounded-3xl items-center min-[480px]:w-[40rem];
+  @apply flex flex-col w-[30rem] mt-[2rem] m-auto rounded-3xl items-center min-[480px]:w-[40rem] sm:w-[50rem] md:w-[60rem];
 }
 
 body,
