@@ -1,0 +1,25 @@
+De Professor a Desenvolvedor: O que eu trago na bagagem? "Educação Física me ensinou a observar, 
+analisar e corrigir movimentos. No Front-end, uso esse mesmo olhar analítico para refinar interfaces, 
+garantir a melhor experiência do usuário e manter meu código limpo e funcional. Disciplina não se negocia; entrega se prioriza."
+
+
+
+
+/* Habilidades Interpessoais (Soft Skills)
+
+Comunicação Assertiva: Anos instruindo pessoas e liderando treinos me ensinaram a explicar conceitos complexos de forma simples e clara.
+
+Disciplina e Foco: A rotina da Educação Física me moldou para ter constância e resiliência diante de desafios técnicos e prazos.
+
+Adaptabilidade: Transicionei de carreira com sucesso, o que prova minha capacidade de aprendizado rápido e abertura ao novo.
+
+Trabalho em Equipe: Sei que nenhum projeto grande se constrói sozinho. Valorizo a troca de conhecimento e o feedback construtivo.
+
+
+
+Opção 2: Texto Narrativo (Para o "About Me")
+Este é excelente para humanizar seu perfil e mostrar que você traz maturidade para a equipe.
+
+"Minha jornada começou na Educação Física, onde aprendi que a consistência é a chave para qualquer evolução. Hoje, aplico essa mesma mentalidade no desenvolvimento de software. 
+A transição para a tecnologia não foi apenas uma mudança de ferramentas, mas a expansão da minha capacidade de resolver problemas. Trago comigo a facilidade em lidar com pessoas, 
+o foco em resultados e a calma necessária para debugar um código ou aprender uma nova biblioteca do zero."  */

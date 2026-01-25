@@ -1,4 +1,4 @@
-import profileImage from "@/assets/profileImage.jpg";
+import profileImage from "@/assets/images/thiago-perfil.png";
 import { Button } from "@/components/ui/button";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
