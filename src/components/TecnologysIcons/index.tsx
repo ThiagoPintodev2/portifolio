@@ -31,10 +31,11 @@ function TecnologysIcons() {
   ]
 
   return (
-    <div className={`flex gap-6 pb-[2rem] md:gap-9 xl:pb-0`}>
+    <div className={`flex gap-6 p-[2rem] md:gap-9 lg:p-0 xl:pb-0 xl:pt-0 max-[560px]:flex-wrap max-[560px]:justify-center`}>
       {
         tecnologysIconsData.map((el, i) => (
-          <div key={i} className={`text-[4.5rem] sm:text-[5.5rem] xl:text-[7.2rem]`}>
+          <div key={i} className={`text-[3.5rem] border-1 border-mediumbrown shadow-xl/50 text-ligthbrown
+          rounded-3xl p-4 min-[480px]:text-[3.5rem] lg:text-[6.5rem] xl:text-[6.5rem]`}>
             {el.Tecnologys}
           </div>
         ))

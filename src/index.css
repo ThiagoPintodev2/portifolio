@@ -17,8 +17,12 @@
 }
 
 .div-about-me {
-  @apply flex flex-col w-[30rem] mb-[2rem] m-auto rounded-3xl items-center 
-  min-[480px]:w-[40rem] sm:w-[50rem] md:w-[60rem] lg:w-[95%] lg:text-2xl;
+  @apply flex flex-col w-[90%]  rounded-3xl items-center border-1 
+  shadow-xl/20 border-white/5 lg:w-[95%] lg:text-2xl;
+}
+
+.p-about-me {
+  @apply font-raleway text-[1.5rem] p-[4rem] text-center lg:text-[1.8rem] xl:text-[2rem] text-justify opacity-75
 }
 
 body,

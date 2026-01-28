@@ -26,7 +26,7 @@ function ContactSection() {
   return (
     <div
       className={`flex flex-col w-[100%] bg-[#1f1d1d] rounded-3xl text-ligthbrown font-raleway 
-        text-[1.8rem] shadow-xl/20 border-white/5 border-1 items-center lg:w-[100%] lg:h-[45rem] lg:gap-8 lg:mt-[2rem]`}
+        text-[1.8rem] shadow-xl/20 border-white/5 border-1 items-center lg:w-[100%] lg:h-[45rem] lg:gap-8`}
     >
       {contactData.map((el, i) => (
         <div key={i}
