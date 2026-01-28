@@ -12,7 +12,7 @@ function Main() {
       </div>
       <div
         className={`flex flex-col h-[100%] gap-[2rem] items-center justify-between bg-[#232120] 
-        rounded-3xl w-[80vw] m-auto sm:w-[70vw] md:w-[60vw] lg:w-[65vw] lg:mt-[8rem] lg:gap-[2rem] lg:h-[100rem]`}
+        rounded-3xl w-[80vw] m-auto sm:w-[70vw] md:w-[60vw] lg:w-[65vw] lg:mt-[8rem] lg:h-[100rem]`}
       >
         <AboutMeSection />
         <TecnologysSection />
