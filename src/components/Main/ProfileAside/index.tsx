@@ -28,7 +28,7 @@ function ProfileAside() {
           <img
             src={profileImage}
             alt="profile image"
-            className={`w-[20rem] mt-[-12rem] rounded-3xl m-auto sm:w-[22rem] sm:mt-[-10rem] md:w-[24rem]`}
+            className={`w-[20rem] mt-[-12rem] rounded-3xl m-auto sm:w-[22rem] sm:mt-[-10rem] md:w-[24rem] border-1 border-mediumbrown shadow-xl/50`}
           />
         </div>
         <div className={`flex flex-col items-center justify-center`}>

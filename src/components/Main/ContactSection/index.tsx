@@ -31,11 +31,11 @@ function ContactSection() {
       {contactData.map((el, i) => (
         <div key={i}
           className={`flex flex-col justify-center items-center text-center 
-            gap-3 lg:justify-start lg:w-[85%]`}
+            gap-3 lg:w-[85%]`}
         >
           <div
             className={`flex items-center mt-[3rem] text-[4rem] justify-center w-[6.6rem] h-[6.6rem]
-              bg-[#3c3730] rounded-2xl lg:text-[2.5rem] lg:w-[6rem] lg:h-[6rem]`}
+              bg-[#3c3730] rounded-2xl lg:text-[2.5rem] lg:w-[6rem] lg:h-[6rem] border-1 border-mediumbrown shadow-xl/30`}
           >
             {el.contactIcon}
           </div>

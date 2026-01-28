@@ -13,7 +13,7 @@ function Header() {
       <div
         className={`flex w-[35rem] h-[10rem] justify-center mt-[4rem] rounded-3xl 
           items-center bg-bgdark2 min-[480px]:w-[40rem] gap-8
-          sm:w-[40rem] lg:w-[38rem] lg:mt-0`}
+          sm:w-[40rem] lg:w-[38rem] lg:mt-0 `}
       >
         <NavComponentesIcons value={"Home"} img={<PiHouseLine className={`text-[1.9rem] sm:text-[2rem]`} />} />
         <NavComponentesIcons value={"Resume"} img={<LuBookAudio className={`text-[1.9rem] sm:text-[2rem]`} />} />
