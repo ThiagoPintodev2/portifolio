@@ -19,7 +19,7 @@ function ProfileAside() {
   ];
 
   return (
-    <div>
+    <aside>
       <div
         className={`flex flex-col w-[80vw] mt-[8rem] h-[100rem] bg-[#232120] m-auto pb-10 rounded-3xl items-center 
                    sm:w-[70vw] sm:h-[102rem] md:w-[60vw] md:h-[105rem] lg:w-[35vw] xl:w-[40rem] lg:h-[100rem]`}
@@ -65,7 +65,7 @@ function ProfileAside() {
           <ContactSection />
         </div>
       </div>
-    </div>
+    </aside>
   );
 }
 

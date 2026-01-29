@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./components/Header/";
+import Header from "./components/Header";
 import Main from "./components/Main";
 import { Routes, Route } from "react-router";
 import Resume from "./components/pages/Resume";
