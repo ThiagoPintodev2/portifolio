@@ -1,28 +1,22 @@
-import { useState } from "react";
-import TecnologysSection from "../TecnologysSection";
+import TecnologiesSection from "../TecnologiesSection";
 import AboutMeSection from "./AboutMeSection";
 import ProfileAside from "./ProfileAside";
 
 function Main() {
-  const [windowSize, setWindowSize] = useState<number>(1024);
-
-  window.addEventListener("resize", () => {
-    setWindowSize(window.innerWidth);
-  });
-
   return (
-    <div className="mt-50 max-w-[1280px] m-auto">
-      {windowSize <= 1023 ? (
-        <div className={`flex flex-col lg:flex-row lg:mt-[5rem]`}>
-          <ProfileAside />
-          <AboutMeSection />
-          <TecnologysSection />
-        </div>
-      ) : (
-        <div>
-          <ProfileAside />
-        </div>
-      )}
+    <div
+      className={`flex mt-50 max-w-[1280px] h-[90%] m-auto gap-8 pb-18 max-[1024px]:flex-col`}
+    >
+      <div>
+        <ProfileAside />
+      </div>
+      <div
+        className={`flex flex-col h-[100%] gap-[2rem] items-center justify-between bg-[#232120] 
+        rounded-3xl w-[80vw] m-auto sm:w-[70vw] md:w-[60vw] lg:w-[65vw] lg:mt-[8rem] lg:h-[100rem]`}
+      >
+        <AboutMeSection />
+        <TecnologiesSection />
+      </div>
     </div>
   );
 }

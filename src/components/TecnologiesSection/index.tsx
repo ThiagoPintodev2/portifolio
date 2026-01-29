@@ -1,19 +1,19 @@
-import TecnologysIcons from "../TecnologysIcons";
+import TecnologiesIcons from "../TecnologiesIcons";
 
-function TecnologysSection() {
+function TecnologieSection() {
   return (
     <div
-      className={`div-about-me bg-[#232120] lg:border lg:border-white/5 lg:shadow-xl/20 lg:h-[60%]`}
+      className={`div-about-me bg-[#232120] lg:border lg:border-white/5 lg:shadow-xl/20 lg:h-[55%] mb-[2.5rem]`}
     >
-      <div className={`flex flex-col items-center lg:pt-[2rem]`}>
-        <h2 className={`font-poppins text-[3.2rem] text-ligthbrown m-[1rem]`}>
+      <div className={`flex flex-col items-center`}>
+        <h2 className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}>
           WHAT I DO
         </h2>
-        <hr className={`bg-white w-[12rem]`} />
+        <hr className={`bg-white w-[12rem] `} />
       </div>
       <div>
         <p
-          className={`font-raleway text-[1.6rem] p-[3rem] text-center text-ligthbrown lg:text-[1.7rem] xl:text-[1.8rem]`}
+          className={`p-about-me text-ligthbrown`}
         >
           "Minha atuação no Frontend é focada em transformar ideias em realidade
           através de código limpo e interfaces modernas. Utilizo HTML, CSS e
@@ -28,10 +28,10 @@ function TecnologysSection() {
         </p>
       </div>
       <div>
-        <TecnologysIcons />
+        <TecnologiesIcons />
       </div>
     </div>
   );
 }
 
-export default TecnologysSection;
+export default TecnologieSection;
