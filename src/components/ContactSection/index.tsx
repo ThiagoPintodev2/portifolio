@@ -13,7 +13,7 @@ function ContactSection() {
     },
     {
       title: "Email",
-      value: "thiago.silvabz@hotmail.com",
+      value: "thiago.dev2@gmail.com",
       contactIcon: <AiOutlineMail />,
     },
     {

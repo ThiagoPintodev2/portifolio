@@ -16,7 +16,7 @@
   --breakpoint-3xl: 55rem;
 }
 
-.div-about-me {
+.div-default {
   @apply flex flex-col w-[90%]  rounded-3xl items-center border-1 
   shadow-xl/40 border-white/5 lg:w-[95%] lg:text-2xl;
 }

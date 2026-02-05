@@ -34,7 +34,7 @@ function Header() {
   ];
 
   return (
-    <div
+    <header
       className={`flex flex-col max-w-[1280px] m-auto items-center pt-[4rem] lg:flex-row lg:items-center lg:justify-between`}
     >
       <div
@@ -57,7 +57,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-    </div>
+    </header>
   );
 }
 

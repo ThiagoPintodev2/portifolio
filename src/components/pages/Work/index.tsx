@@ -5,13 +5,6 @@ import projectPomodoroSetting from "@/assets/images/pomodoroImage/setting.png";
 import projectPomodoroTimer from "@/assets/images/pomodoroImage/createAccountMobile.png";
 import projectPomodoroHomeMobile from "@/assets/images/pomodoroImage/homeMobile.png";
 import themeColor from "@/assets/images/pomodoroImage/themeColor.png";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 function Work() {
   const projectsDatas = [
@@ -72,23 +65,27 @@ function Work() {
               PORTIFOLIO
             </h2>
             <hr className={`bg-[#232120] h-[2px] w-[12rem]`} />
-            <div className={`mt-[3rem]`}>
-              <Carousel>
-                <CarouselContent>
-                  {projectsDatas.map((project) => (
-                    <CarouselItem className={`w-[8rem]`} key={project.id}>
-                      <img
-                        className={`rounded-4xl`}
-                        src={project.img}
-                        alt={project.title}
-                      />
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
+            <div
+              className={`flex flex-wrap max-w-[840px] justify-center mt-[3rem] gap-8 mb-[2rem]`}
+            >
+              {projectsDatas.map((project) => (
+                <div className={`w-[20rem]`} key={project.id}>
+                  <img
+                    className={`rounded-4xl`}
+                    src={project.img}
+                    alt={project.title}
+                  />
+                </div>
+              ))}
             </div>
+            <p
+              className={`text-ligthbrown font-poppins text-[2rem] mt-[2rem] p-[5rem] text-justify`}
+            >
+              Projeto Pomodoro - Totalmente resposnivo. Projeto criado para gerenciar o tempo de estudo
+              e tarefas utilizando a técnica Pomodoro. Desenvolvido com ReactJS,
+              TypeScript, TailwindCSS e shadcn UI. Possui configurações
+              personalizáveis, como tempos de foco e pausa, temas e alarmes.
+            </p>
           </div>
         </div>
       </div>

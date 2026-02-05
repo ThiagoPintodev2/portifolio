@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import ProfileAside from "@/components/ProfileAside";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { MdWorkHistory } from "react-icons/md";
+import { HiOutlineArrowRight } from "react-icons/hi";
 import WorkskillsSection from "@/components/WorkSkillsSection";
 import SoftSkillsSection from "@/components/SoftSkillsSection";
 import type { ResumeProps } from "./resume";
@@ -17,8 +18,8 @@ const education: ResumeProps[] = [
   {
     year: "2020 - 2021",
     title: "Software Development",
-    place: "Moringa School",
-  },
+    place: "Moringa School"
+  }
 ];
 
 const experience: ResumeProps[] = [
@@ -30,14 +31,13 @@ const experience: ResumeProps[] = [
   {
     year: "2022 - Present",
     title: "Technical Mentor",
-    place: "Moringa School",
-  },
+    place: "Moringa School"
+  }
 ];
 
 function Section({
   Icon,
   title,
-  
   items,
 }: {
   Icon: React.ComponentType<{ size?: number; className?: string }>;
@@ -55,9 +55,10 @@ function Section({
       {items.map((el, i) => (
         <CardContainer
           key={i}
-          year={el.year}
-          title={el.title}
-          school={el.place}
+          icon={<HiOutlineArrowRight size={28} />}
+          title1={el.year}
+          title2={el.title}
+          title3={el.place}
         />
       ))}
     </section>

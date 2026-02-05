@@ -3,7 +3,7 @@ import TecnologiesIcons from "../TecnologiesIcons";
 function TecnologieSection() {
   return (
     <div
-      className={`div-about-me bg-[#232120] lg:border lg:border-white/5 lg:shadow-xl/20 lg:h-[55%] mb-[2.5rem]`}
+      className={`div-default bg-[#232120] lg:border lg:border-white/5 lg:shadow-xl/20 lg:h-[55%] mb-[2.5rem]`}
     >
       <div className={`flex flex-col items-center`}>
         <h2 className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}>

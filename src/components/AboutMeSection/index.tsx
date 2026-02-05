@@ -2,7 +2,7 @@ import type { AboutMeProps } from "./AboutMeProps";
 
 function AboutMeSection( { text, title }: AboutMeProps ) {
   return (
-    <div className={`div-about-me bg-[#FFE3BF] h-[40%] mt-[2.5rem]`}>
+    <div className={`div-default bg-[#FFE3BF] h-[40%] mt-[2.5rem]`}>
       <div className={`flex flex-col items-center`}>
         <h2 className={`font-poppins text-[3.2rem] text-[#232120] m-[1.5rem] opacity-75`}>
           {title}

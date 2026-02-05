@@ -1,5 +1,6 @@
 export type CardContainerProps = {
-  year: string;
-  title: string;
-  school: string;
+  icon?: React.ReactNode;
+  title1: string;
+  title2: string;
+  title3: string;
 };
