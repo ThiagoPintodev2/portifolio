@@ -1,6 +1,6 @@
 import React from "react";
 import CardContainer from "@/components/CardContainer";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Index";
 import ProfileAside from "@/components/ProfileAside";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { MdWorkHistory } from "react-icons/md";
@@ -18,8 +18,8 @@ const education: ResumeProps[] = [
   {
     year: "2020 - 2021",
     title: "Software Development",
-    place: "Moringa School"
-  }
+    place: "Moringa School",
+  },
 ];
 
 const experience: ResumeProps[] = [
@@ -31,8 +31,8 @@ const experience: ResumeProps[] = [
   {
     year: "2022 - Present",
     title: "Technical Mentor",
-    place: "Moringa School"
-  }
+    place: "Moringa School",
+  },
 ];
 
 function Section({
@@ -80,7 +80,7 @@ function Resume() {
             <h2
               className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}
             >
-              RESUME
+              RESUMO
             </h2>
             <hr className={`bg-[#232120] h-[2px] w-[12rem]`} />
           </header>
@@ -90,18 +90,19 @@ function Resume() {
           >
             <Section
               Icon={RiGraduationCapFill}
-              title="Education"
+              title="Educação"
               items={education}
             />
             <Section
               Icon={MdWorkHistory}
-              title="Experience"
+              title="Experiência"
               items={experience}
             />
           </div>
 
           <div
-            className={`flex flex-col h-[20%] gap-[2rem] pb-[1.5rem] mt-[2rem] items-center justify-between bg-[#232120] rounded-3xl w-[80vw] m-auto sm:w-[70vw] md:w-[60vw] xl:w-[40vw]`}
+            className={`flex flex-col h-[20%] gap-[2rem] pb-[1.5rem] mt-[2rem] items-center justify-between 
+              bg-[#232120] rounded-3xl w-[80vw] m-auto sm:w-[100%] md:px-[2rem]`}
           >
             <WorkskillsSection />
             <SoftSkillsSection />

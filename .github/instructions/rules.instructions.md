@@ -40,11 +40,11 @@ services/
 utils/
 types/
 
-A tipagem doscomponentes devem ser criadas em arquivos dentro da pasta juntos com os componentes, com o mesmo nome do componente porém de letra minúscula usando a extensão .ts.
+A tipagem doscomponentes devem ser criadas em arquivos dentro da pasta juntos com os componentes, com o mesmo nome da pasta do componente porém a letra minúscula usando a extensão .ts.
 Exemplo:
 
 ```
-button.ts para o componente Button.tsx.
+button.ts para o componente Button.tsx
 
 ```
 
@@ -54,7 +54,7 @@ Exemplo arquitetura de componente com tipagenm dentro:
 src/
  components/
   Button/
-   Button.tsx
+   index.tsx
    button.ts
 
 ```
@@ -65,6 +65,7 @@ src/
 - Props tipadas
 - Responsabilidade única por componente
 - Componentes pequenos e reutilizávei
+- Ao criar a pasta do componente, criar o arquivo .tsx sempre com o nome de index.tsx
 
 ## TypeScript
 

@@ -5,49 +5,48 @@ import { SiShadcnui } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 
+const tecnologiesIconsData = [
+  { id: 1, Tecnologys: <SiHtml5 /> },
+  { id: 2, Tecnologys: <DiJsBadge /> },
+  { id: 3, Tecnologys: <FaReact /> },
+  { id: 4, Tecnologys: <SiShadcnui /> },
+  { id: 5, Tecnologys: <RiTailwindCssFill /> },
+  { id: 6, Tecnologys: <SiTypescript /> },
+];
+
+const iconsLoop = [...tecnologiesIconsData, ...tecnologiesIconsData];
 
 function TecnologiesIcons() {
-  
-  const tecnologiesIconsData = [
-    {
-      id: 1,
-      Tecnologys: <SiHtml5 />
-    },
-    {
-      id: 2,
-      Tecnologys: <DiJsBadge /> 
-    },
-    {
-      id: 3,
-      Tecnologys: <FaReact /> 
-    },
-    {
-      id: 4,
-      Tecnologys: <SiShadcnui /> 
-    },
-    {
-      id: 5,
-      Tecnologys: <RiTailwindCssFill /> 
-    },
-    {
-      id: 6,
-      Tecnologys: <SiTypescript />
-    }
-  ]
-
   return (
-    <div className={`flex gap-6 p-[2rem] md:gap-9 lg:p-0 xl:pb-0 xl:pt-0 max-[560px]:flex-wrap 
-    max-[560px]:justify-center max-[1033px]:flex-wrap max-[1033px]:justify-center`}>
-      {
-        tecnologiesIconsData.map((el, i) => (
-          <div key={i} className={`text-[3.5rem] border-1 border-mediumbrown shadow-xl/50 text-ligthbrown
-          rounded-3xl p-4 min-[480px]:text-[4.5rem] md:text-[5rem] lg:text-[5rem] xl:text-[5rem]`}>
+    <div className="relative w-[60vw] sm:w-[55vw] md:w-[45vw] lg:w-[50vw] xl:w-[50vw] 2xl:w-[38vw] 
+    m-auto overflow-x-hidden py-8 px-[4rem]">
+      <div
+        className="flex gap-10 animate-carousel whitespace-nowrap"
+        style={{
+          animation: "carousel 30s linear infinite",
+        }}
+      >
+        {iconsLoop.map((el, i) => (
+          <div
+            key={i}
+            className="flex w-[5rem] h-[5rem] items-center justify-center text-[3.5rem] text-[#232120] rounded-2xl p-4  
+            sm:w-[5.5rem] sm:h-[5.5rem] md:text-[5rem] lg:w-[7rem] lg:h-[7rem] lg:text-[5rem] xl:text-[5rem] bg-[#FFE3BF]"
+            
+          >
             {el.Tecnologys}
           </div>
-        ))
-      }
+        ))}
+      </div>
+      <style>{`
+        @keyframes carousel {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </div>
-  )
+  );
 }
 
-export default TecnologiesIcons
+export default TecnologiesIcons;
+
+

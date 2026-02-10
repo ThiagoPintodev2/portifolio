@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header/Index";
 import ProfileAside from "@/components/ProfileAside";
 import desktop from "@/assets/images/pomodoroImage/desktop.png";
 import mobile from "@/assets/images/pomodoroImage/mobile.png";
@@ -21,7 +21,7 @@ function Work() {
             <h2
               className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}
             >
-              PORTFOLIO
+              PORTIFÓLIO
             </h2>
             <hr className={`bg-[#232120] h-[2px] w-[12rem]`} />
 
@@ -40,18 +40,19 @@ function Work() {
                 alt="Project One mobile1 view"
               />
             </div>
-            <div className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
-                shadow-xl/40 border-white/5 lg:text-2xl`}>
-
-            <p
-              className={`text-ligthbrown text-[1.4rem] py-[2rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-justify`}
+            <div
+              className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
+                shadow-xl/40 border-white/5 lg:text-2xl`}
             >
-              Projeto Pomodoro - Totalmente responsivo. Projeto criado para
-              gerenciar o tempo de estudo e tarefas utilizando a técnica
-              Pomodoro. Desenvolvido com ReactJS, TypeScript, TailwindCSS e
-              shadcn UI. Possui configurações personalizáveis, como tempo de
-              foco e pausa, temas e alarmes.
-            </p>
+              <p
+                className={`text-ligthbrown text-[1.4rem] py-[2rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-justify`}
+              >
+                Projeto Pomodoro - Totalmente responsivo. Projeto criado para
+                gerenciar o tempo de estudo e tarefas utilizando a técnica
+                Pomodoro. Desenvolvido com ReactJS, TypeScript, TailwindCSS e
+                shadcn UI. Possui configurações personalizáveis, como tempo de
+                foco e pausa, temas e alarmes.
+              </p>
             </div>
           </div>
         </div>

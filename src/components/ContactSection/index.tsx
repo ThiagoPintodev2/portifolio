@@ -7,7 +7,7 @@ import { BsDownload } from "react-icons/bs";
 function ContactSection() {
   const contactData = [
     {
-      title: "Phone",
+      title: "Telefone",
       value: "(22) 99968-7139",
       contactIcon: <MdOutlinePhoneIphone />,
     },
@@ -17,7 +17,7 @@ function ContactSection() {
       contactIcon: <AiOutlineMail />,
     },
     {
-      title: "Location",
+      title: "Localização",
       value: "Rio de Janeito - Brasil",
       contactIcon: <IoLocationSharp />,
     },
@@ -53,7 +53,7 @@ function ContactSection() {
           text-[1.5rem] gap-8 font-raleway font-semiboldd cursor-pointer mt-[3rem] text-darkbrown sm:text-[2rem] lg:mt-[2rem]`}
       >
         <BsDownload />
-        Download Resume
+        Download currículo
       </Button>
     </div>
   );

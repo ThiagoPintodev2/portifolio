@@ -1,5 +1,5 @@
 import CardConatiner from "@/components/CardContainer";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Index";
 import ProfileAside from "@/components/ProfileAside";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
@@ -20,13 +20,13 @@ function Contact() {
             <h2
               className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}
             >
-              CONTACT
+              CONTATO
             </h2>
             <hr className={`bg-[#232120] h-[2px] w-[12rem]`} />
             <div className={`flex w-[90%] h-[16rem] gap-8 mt-[3rem]`}>
               <CardConatiner
                 icon={<FaPhoneVolume size={25} />}
-                title1={"Phone:"}
+                title1={"Telefone:"}
                 title2={"+55 (22) 99968-7139"}
                 title3={""}
               />
@@ -45,7 +45,7 @@ function Contact() {
             </div>
             <div
               className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
-                shadow-xl/40 border-white/5 lg:text-2xl`}
+                shadow-xl/40 border-white/5 lg:text-2xl mt-[2rem]`}
             >
               <p
                 className={`text-ligthbrown font-poppins text-[2rem] p-[4rem] text-justify`}

@@ -15,19 +15,19 @@ function Header() {
     },
     {
       id: 2,
-      value: "Resume",
+      value: "Resumo",
       path: "/resume",
       icon: <LuBookAudio className={`text-[1.9rem] sm:text-[2rem]`} />,
     },
     {
       id: 3,
-      value: "Work",
+      value: "Projetos",
       path: "/work",
       icon: <BsBriefcase className={`text-[1.9rem] sm:text-[2rem]`} />,
     },
     {
       id: 1,
-      value: "Contact",
+      value: "Contato",
       path: "/contact",
       icon: <MdOutlinePhoneInTalk className={`text-[1.9rem] sm:text-[2rem]`} />,
     },
@@ -42,25 +42,27 @@ function Header() {
       >
         {"< Hello, I'm Thiago />"}
       </div>
-        <nav>
-          <ul>
-            <li
-              className={`flex w-[32rem] h-[10rem] justify-center mt-[4rem] rounded-3xl 
+      <nav>
+        <ul
+          className={`flex w-[32rem] h-[10rem] justify-center mt-[4rem] rounded-3xl 
           items-center bg-bgdark2 min-[480px]:w-[40rem] gap-8
           sm:w-[40rem] md:w-[50vw] lg:w-[38rem] lg:mt-0 text-ligthbrown`}
-            >
-              {navsDatas.map((nav, i) => (
-                <NavLink key={i} to={nav.path}>
-                  <NavComponentesIcons value={nav.value} img={nav.icon} />
-                </NavLink>
-              ))}
+        >
+          {navsDatas.map((nav, i) => (
+            <li>
+              <NavLink key={i} to={nav.path}>
+                <NavComponentesIcons
+                  path={nav.path}
+                  value={nav.value}
+                  img={nav.icon}
+                />
+              </NavLink>
             </li>
-          </ul>
-        </nav>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }
 
 export default Header;
-
-// img={<PiHouseLine className={`text-[1.9rem] sm:text-[2rem]`} />}

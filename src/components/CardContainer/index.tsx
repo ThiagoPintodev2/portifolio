@@ -10,7 +10,7 @@ function CardConatiner({ icon, title1, title2, title3 }: CardContainerProps) {
       {icon}
         <p
         className={`font-raleway text-[1.2rem] pl-8 pb-5 mt-6 max-[639px]:text-[2rem] 
-          sm:text-[2rem] md:text-[2rem] lg:text-[2rem] xl:text-[2.2rem]`}
+          sm:text-[2rem] md:text-[2rem] lg:text-[2rem] xl:text-[2rem]`}
           >
         {title1}
       </p>
