@@ -15,7 +15,7 @@ function TecnologieSection() {
       </div>
       <div>
         <p className={`p-about-me text-ligthbrown`}>
-          "Minha atuação no Frontend é focada em transformar ideias em realidade
+          Minha atuação no Frontend é focada em transformar ideias em realidade
           através de código limpo e interfaces modernas. Utilizo HTML, CSS e
           JavaScript como base para criar estruturas semânticas e eficientes.
           Com o React, desenvolvo aplicações modulares e inteligentes, elevando
@@ -24,7 +24,7 @@ function TecnologieSection() {
           garantir componentes de alta qualidade técnica e estética. Estou
           sempre explorando como essas ferramentas podem trabalhar juntas para
           resolver problemas e proporcionar ao usuário final, uma ótima
-          experiência"
+          experiência.
         </p>
       </div>
       <div>
