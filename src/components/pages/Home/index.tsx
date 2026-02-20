@@ -1,7 +1,7 @@
 import TecnologiesSection from "../../TecnologiesSection";
 import AboutMeSection from "../../AboutMeSection";
 import ProfileAside from "../../ProfileAside";
-import Header from "@/components/Header/Index";
+import Header from "@/components/header/Index";
 
 function Home() {
   return (

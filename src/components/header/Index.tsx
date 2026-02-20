@@ -1,4 +1,4 @@
-import NavComponentesIcons from "../NavComponentsIcons";
+import NavComponentesIcons from "../navComponentsIcons";
 import { PiHouseLine } from "react-icons/pi";
 import { LuBookAudio } from "react-icons/lu";
 import { BsBriefcase } from "react-icons/bs";

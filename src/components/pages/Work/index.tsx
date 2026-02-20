@@ -1,4 +1,4 @@
-import Header from "@/components/Header/Index";
+import Header from "@/components/header/Index";
 import ProfileAside from "@/components/ProfileAside";
 import desktop from "@/assets/images/pomodoroImage/desktop.png";
 import mobile from "@/assets/images/pomodoroImage/mobile.png";
