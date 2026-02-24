@@ -3,7 +3,7 @@ import { PiHouseLine } from "react-icons/pi";
 import { LuBookAudio } from "react-icons/lu";
 import { BsBriefcase } from "react-icons/bs";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   const navsDatas = [
@@ -49,8 +49,8 @@ function Header() {
           sm:w-[40rem] md:w-[50vw] lg:w-[38rem] lg:mt-0 text-ligthbrown`}
         >
           {navsDatas.map((nav, i) => (
-            <li>
-              <NavLink key={i} to={nav.path}>
+            <li key={i}>
+              <NavLink to={nav.path}>
                 <NavComponentesIcons
                   path={nav.path}
                   value={nav.value}
