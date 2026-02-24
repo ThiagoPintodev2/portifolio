@@ -1,5 +1,5 @@
 import CardConatiner from "@/components/CardContainer";
-import Header from "@/components/Header/index.tsx";
+import Header from "@/components/Header/Index.tsx";
 import ProfileAside from "@/components/ProfileAside";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
