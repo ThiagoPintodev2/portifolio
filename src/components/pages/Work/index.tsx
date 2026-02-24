@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header/index.tsx";
 import ProfileAside from "@/components/ProfileAside";
 import desktop from "@/assets/images/pomodoroImage/desktop.png";
 import mobile from "@/assets/images/pomodoroImage/mobile.png";

@@ -1,6 +1,6 @@
 import React from "react";
 import CardContainer from "@/components/CardContainer";
-import Header from "@/components/Header";
+import Header from "@/components/Header/index.tsx";
 import ProfileAside from "@/components/ProfileAside";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { MdWorkHistory } from "react-icons/md";
