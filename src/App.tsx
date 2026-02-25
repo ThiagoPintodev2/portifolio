@@ -10,9 +10,9 @@ function App() {
     <div className={`bg-bgdark h-[100%]`}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/resumo" element={<Resume />} />
+        <Route path="/projetos" element={<Work />} />
+        <Route path="/contato" element={<Contact />} />
       </Routes>
     </div>
   );

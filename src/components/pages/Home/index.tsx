@@ -1,7 +1,7 @@
 import TecnologiesSection from "../../TecnologiesSection";
 import AboutMeSection from "../../AboutMeSection";
 import ProfileAside from "../../ProfileAside";
-import Header from "@/components/Header/Index.tsx";
+import Header from "@/components/Header";
 
 function Home() {
   return (

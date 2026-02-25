@@ -4,9 +4,10 @@ import { LuBookAudio } from "react-icons/lu";
 import { BsBriefcase } from "react-icons/bs";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import type { navDatasProps } from "./navDatasProps";
 
 function Header() {
-  const navsDatas = [
+  const navsDatas: navDatasProps[] = [
     {
       id: 1,
       value: "Home",
@@ -16,19 +17,19 @@ function Header() {
     {
       id: 2,
       value: "Resumo",
-      path: "/resume",
+      path: "/resumo",
       icon: <LuBookAudio className={`text-[1.9rem] sm:text-[2rem]`} />,
     },
     {
       id: 3,
       value: "Projetos",
-      path: "/work",
+      path: "/projetos",
       icon: <BsBriefcase className={`text-[1.9rem] sm:text-[2rem]`} />,
     },
     {
       id: 1,
       value: "Contato",
-      path: "/contact",
+      path: "/contato",
       icon: <MdOutlinePhoneInTalk className={`text-[1.9rem] sm:text-[2rem]`} />,
     },
   ];

@@ -1,6 +1,5 @@
 import React from "react";
-import CardContainer from "@/components/CardContainer";
-import Header from "@/components/Header/Index.tsx";
+import CardContainer from "@/components/CardContainer";;
 import ProfileAside from "@/components/ProfileAside";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { MdWorkHistory } from "react-icons/md";
@@ -8,6 +7,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import WorkskillsSection from "@/components/WorkSkillsSection";
 import SoftSkillsSection from "@/components/SoftSkillsSection";
 import type { ResumeProps } from "./resume";
+import Header from "@/components/Header";
 
 const education: ResumeProps[] = [
   {

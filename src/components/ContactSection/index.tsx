@@ -29,7 +29,8 @@ function ContactSection() {
         text-[1.8rem] shadow-xl/20 border-white/5 border-1 items-center h-[65rem] sm:h-[65rem] lg:w-[100%] lg:h-[60rem]`}
     >
       {contactData.map((el, i) => (
-        <div key={i}
+        <div
+          key={i}
           className={`flex flex-col justify-center items-center text-center 
             gap-3 lg:w-[85%]`}
         >
@@ -43,17 +44,18 @@ function ContactSection() {
             {el.title}
             <p>{el.value}</p>
           </div>
-            <div className="w-[22rem] h-[0.5px] border-white/5 border-1 mt-[1rem] sm:w-[30rem] md:w-[35rem] lg:w-[25rem]"></div>
-            
+          <div className="w-[22rem] h-[0.5px] border-white/5 border-1 mt-[1rem] sm:w-[30rem] md:w-[35rem] lg:w-[25rem]"></div>
         </div>
       ))}
-      
+
       <Button
         className={`flex items-center w-[85%] h-[6rem] rounded-2xl bg-ligthbrown mb-[3rem] border-white/5 lg:shadow-xl/20
           text-[1.5rem] gap-8 font-raleway font-semiboldd cursor-pointer mt-[3rem] text-darkbrown sm:text-[2rem] lg:mt-[2rem]`}
       >
         <BsDownload />
-        Download currículo
+        <a href="Curriculo-Thiago.pdf" download>
+          Download currículo
+        </a>
       </Button>
     </div>
   );
