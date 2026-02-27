@@ -11,27 +11,32 @@ import Header from "@/components/Header";
 
 const education: ResumeProps[] = [
   {
-    year: "2020 - 2021",
-    title: "Software Development",
-    place: "Moringa School",
+    year: "2008 - 2013",
+    title: "- Licenciatura em Educação Física",
+    place: "Universidade Estácio de Sá",
   },
   {
-    year: "2020 - 2021",
-    title: "Software Development",
-    place: "Moringa School",
+    year: "2014 - 2018",
+    title: "- Bacharelado em Educação Física",
+    place: "Universidade Estácio de Sá",
   },
 ];
 
 const experience: ResumeProps[] = [
   {
-    year: "2022 - Present",
-    title: "Technical Mentor",
-    place: "Moringa School",
+    year: " 01/2016 – 04/2024",
+    title: "- Professor de Educação Física",
+    place: " Secretaria Municipal de Esporte e Lazer Prefeitura de Armação dos Búzios - Rj",
   },
   {
-    year: "2022 - Present",
-    title: "Technical Mentor",
-    place: "Moringa School",
+    year: "11/2016 – 08/2020",
+    title: "- Professor de Musculação",
+    place: "Academia Workout Búzios Fitness LTDA - Rj",
+  },
+  {
+    year: "01/2022 – 12/2024",
+    title: "- Professor de Futebol de Areia",
+    place: "MM Treinamento de Atletas LTDA - Rj",
   },
 ];
 
@@ -48,14 +53,14 @@ function Section({
     <section
       className={`flex flex-col w-[100%] items-center md:flex-col md:w-[100%]`}
     >
-      <div className={`flex gap-4 my-[2rem]`}>
+      <div className={`flex gap-4 my-[1.5rem]`}>
         <Icon size={30} className={`text-ligthbrown`} />
         <h3 className={`text-white font-poppins text-[2rem]`}>{title}</h3>
       </div>
       {items.map((el, i) => (
         <CardContainer
           key={i}
-          icon={<HiOutlineArrowRight size={28} />}
+          icon={<HiOutlineArrowRight size={20} />}
           title1={el.year}
           title2={el.title}
           title3={el.place}
@@ -86,7 +91,7 @@ function Resume() {
           </header>
 
           <div
-            className={`flex items-center w-[100%] lg:mt-[2rem] max-[1024px]:flex-col`}
+            className={`flex items-start w-[100%] lg:mt-[2rem] max-[1024px]:flex-col`}
           >
             <Section
               Icon={RiGraduationCapFill}
@@ -101,8 +106,8 @@ function Resume() {
           </div>
 
           <div
-            className={`flex flex-col h-[20%] gap-[2rem] pb-[1.5rem] mt-[2rem] items-center justify-between 
-              bg-[#232120] rounded-3xl w-[80vw] m-auto sm:w-[100%] md:px-[2rem]`}
+            className={`flex flex-col w-[90%] justify-center items-center h-[25%] gap-[2rem] mb-[2rem] mt-[4rem]
+              bg-[#232120] rounded-3xl w-[80vw] sm:w-[90%] lg:w-[100%] lg:flex-row lg:items-end lg:pb-[2rem] lg:gap-[3rem]`}
           >
             <WorkskillsSection />
             <SoftSkillsSection />

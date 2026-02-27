@@ -3,9 +3,11 @@ import { AiOutlineMail } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
 import { Button } from "@/components/ui/button";
 import { BsDownload } from "react-icons/bs";
+import type { ContactSectionProps } from "./contactSectionProps";
 
 function ContactSection() {
-  const contactData = [
+
+  const contactData: ContactSectionProps[] = [
     {
       title: "Telefone",
       value: "(22) 99968-7139",

@@ -7,7 +7,7 @@ function TecnologieSection() {
     >
       <div className={`flex flex-col items-center`}>
         <h2
-          className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}
+          className={`font-poppins text-[3.2rem] text-center text-ligthbrown m-[1.5rem] opacity-75`}
         >
           O que eu faço?
         </h2>

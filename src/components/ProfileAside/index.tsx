@@ -3,19 +3,20 @@ import { Button } from "@/components/ui/button";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import ContactSection from "../ContactSection";
+import type { socialMediaDataProps } from "./socialMediaDataProps";
 
 function ProfileAside() {
-  const socialMediaData = [
+  const socialMediaData: socialMediaDataProps[] = [
     {
-      SocialMediaIcon: <FaInstagram />,
+      socialMediaIcon: <FaInstagram />,
       href: "https://www.instagram.com/thiago.silvarj?igsh=cGFmNHl4NmtxYzZh&utm_source=qr",
     },
     {
-      SocialMediaIcon: <FaLinkedinIn />,
+      socialMediaIcon: <FaLinkedinIn />,
       href: "https://www.linkedin.com/in/thiago-pinto-ab13b1256/",
     },
     {
-      SocialMediaIcon: <FaGithub />,
+      socialMediaIcon: <FaGithub />,
       href: "https://github.com/ThiagoPintodev2",
     },
   ];
@@ -49,6 +50,7 @@ function ProfileAside() {
             <li className={`flex gap-1 mt-[2rem] w-[90%] h-[7rem] mb-[2.1rem]`}>
               {socialMediaData.map((el, i) => (
                 <Button
+                  asChild
                   variant={"default"}
                   key={i}
                   className={
@@ -63,7 +65,7 @@ function ProfileAside() {
                   }
                 >
                   <a href={el.href} target="_blank">
-                    <div className="text-3xl">{el.SocialMediaIcon}</div>
+                    {el.socialMediaIcon}
                   </a>
                 </Button>
               ))}
