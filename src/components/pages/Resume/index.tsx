@@ -1,5 +1,5 @@
 import React from "react";
-import CardContainer from "@/components/CardContainer";;
+import CardContainer from "@/components/CardContainer";
 import ProfileAside from "@/components/ProfileAside";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { MdWorkHistory } from "react-icons/md";
@@ -26,7 +26,8 @@ const experience: ResumeProps[] = [
   {
     year: " 01/2016 – 04/2024",
     title: "- Professor de Educação Física",
-    place: " Secretaria Municipal de Esporte e Lazer Prefeitura de Armação dos Búzios - Rj",
+    place:
+      " Secretaria Municipal de Esporte e Lazer Prefeitura de Armação dos Búzios - Rj",
   },
   {
     year: "11/2016 – 08/2020",
@@ -83,6 +84,7 @@ function Resume() {
         >
           <header className={`flex flex-col items-center`}>
             <h2
+              id={"resumo"}
               className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}
             >
               RESUMO

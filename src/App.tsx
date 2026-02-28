@@ -4,10 +4,15 @@ import Resume from "./components/pages/Resume";
 import Work from "./components/pages/Work";
 import Contact from "./components/pages/Contact";
 import Home from "./components/pages/Home";
+import ScrollHandler from "./components/ScrollHandler";
 
 function App() {
+
+
+
   return (
-    <div className={`bg-bgdark h-[100%]`}>
+   <div className={`bg-bgdark h-[100%]`}>
+        <ScrollHandler />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resumo" element={<Resume />} />
@@ -17,5 +22,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

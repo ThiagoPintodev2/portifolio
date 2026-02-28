@@ -18,6 +18,7 @@ function Home() {
         rounded-3xl w-[80vw] m-auto sm:w-[70vw] md:w-[60vw] lg:w-[65vw] lg:mt-[8rem] lg:h-[100rem]`}
         >
           <AboutMeSection
+            id={"home"}
             text={`Novo na área de tecnologia e em constante evolução. Recentemente, fiz
           uma transição de carreira de Educação Física para o universo da
           programação. Por que? Porque acredito que a tecnologia é a ferramenta

@@ -19,6 +19,7 @@ function Work() {
         >
           <div className={`flex flex-col items-center pb-[2rem]`}>
             <h2
+              id={"projetos"}
               className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}
             >
               PORTIFÓLIO

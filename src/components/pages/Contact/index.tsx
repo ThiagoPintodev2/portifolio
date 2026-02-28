@@ -19,6 +19,7 @@ function Contact() {
         >
           <div className={`flex flex-col items-center w-[100%]`}>
             <h2
+              id={"contato"}
               className={`font-poppins text-[3.2rem] text-ligthbrown m-[1.5rem] opacity-75`}
             >
               CONTATO
@@ -40,24 +41,24 @@ function Contact() {
                 title3={"Fique à vontade para enviar uma mensagem."}
               />
             </div>
-              <div
-                className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
+            <div
+              className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
                 shadow-xl/40 border-white/5 lg:text-2xl md:h-[50%]`}
-              >
-                <ContactForm />
-              </div>
+            >
+              <ContactForm />
+            </div>
 
-              <div
-                className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
+            <div
+              className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
                 shadow-xl/40 border-white/5 lg:text-2xl mt-[2rem]`}
+            >
+              <p
+                className={`text-ligthbrown text-[1.3rem] font-poppins p-[2rem] text-center sm:text-[1.8rem]`}
               >
-                <p
-                  className={`text-ligthbrown text-[1.3rem] font-poppins p-[2rem] text-center sm:text-[1.8rem]`}
-                >
-                  Estou sempre aberto a discutir novos projetos, oportunidades
-                  no mundo da tecnologia e parcerias.
-                </p>
-              </div>
+                Estou sempre aberto a discutir novos projetos, oportunidades no
+                mundo da tecnologia e parcerias.
+              </p>
+            </div>
           </div>
         </div>
       </main>
