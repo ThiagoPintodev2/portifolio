@@ -2,8 +2,17 @@ import Header from "@/components/Header";
 import ProfileAside from "@/components/ProfileAside";
 import desktop from "@/assets/images/pomodoroImage/desktop.png";
 import mobile from "@/assets/images/pomodoroImage/mobile.png";
+import Skills from "@/components/Skills";
 
 function Work() {
+  const Workskills: string[] = [
+    "HTML 5",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Tailwindcss",
+  ];
+
   return (
     <div>
       <Header />
@@ -50,10 +59,22 @@ function Work() {
               >
                 Projeto Pomodoro - Totalmente responsivo. Projeto criado para
                 gerenciar o tempo de estudo e tarefas utilizando a técnica
-                Pomodoro. Desenvolvido com ReactJS, TypeScript, TailwindCSS e
-                shadcn UI. Possui configurações personalizáveis, como tempo de
+                Pomodoro. Possui configurações personalizáveis, como tempo de
                 foco e pausa, temas e alarmes.
               </p>
+            </div>
+            <div className={`flex flex-col w-[90%] rounded-3xl items-center mt-[2rem] py-[2rem] rounded-3xl items-center border-1 
+                shadow-xl/40 border-white/5`}>
+              <p className={`text-ligthbrown text-[1.4rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-center`}>
+                Tecnologias utilizadas: 
+              </p>
+              <div
+              className={`flex flex-wrap gap-8 rounded-2xl justify-center px-[1rem] lg:text-[1rem] mt-[1rem]`}
+            >
+              {Workskills.map((skill, i) => (
+                <Skills key={i} skill={skill} />
+              ))}
+            </div>
             </div>
           </div>
         </div>

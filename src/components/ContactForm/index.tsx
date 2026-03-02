@@ -26,13 +26,7 @@ function ContactForm() {
           console.log("SUCCESS!");
         },
         (error) => {
-          // Isso vai imprimir o objeto de erro no console para você clicar e ver o que tem dentro
-          console.error("Erro detalhado:", error);
-          // Tenta mostrar a mensagem específica, se existir
-          alert(
-            "Erro ao enviar: " +
-              (error.text || error.message || "Erro desconhecido"),
-          );
+          console.error("FAILED:", error);
         },
       );
     setIsSubmited({
