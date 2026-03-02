@@ -46,7 +46,7 @@ function Work() {
                 shadow-xl/40 border-white/5 lg:text-2xl`}
             >
               <p
-                className={`text-ligthbrown text-[1.4rem] py-[2rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-justify`}
+                className={`text-ligthbrown text-[1.4rem] py-[2rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-center`}
               >
                 Projeto Pomodoro - Totalmente responsivo. Projeto criado para
                 gerenciar o tempo de estudo e tarefas utilizando a técnica
