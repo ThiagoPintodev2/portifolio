@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button } from "../ui/button";
-import { toast, Toaster } from "sonner"
+import { toast, Toaster } from "sonner";
 
 function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
@@ -18,20 +18,21 @@ function ContactForm() {
     if (!form.current) return;
 
     emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: import.meta.env.VITE_PUBLIC_KEY,
-        },
-      )
+      .sendForm("service_zrw92rl", "template_6oawwqf", form.current, {
+        publicKey: "-Rvp6g7p7XQ8pvl40",
+      })
       .then(
         () => {
           console.log("SUCCESS!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          // Isso vai imprimir o objeto de erro no console para você clicar e ver o que tem dentro
+          console.error("Erro detalhado:", error);
+          // Tenta mostrar a mensagem específica, se existir
+          alert(
+            "Erro ao enviar: " +
+              (error.text || error.message || "Erro desconhecido"),
+          );
         },
       );
     setIsSubmited({
@@ -63,7 +64,9 @@ function ContactForm() {
         />
       </label>
 
-      <label className={`flex flex-col gap-2 text-2xl text-ligthbrown font-medium`}>
+      <label
+        className={`flex flex-col gap-2 text-2xl text-ligthbrown font-medium`}
+      >
         Email
         <input
           onChange={(e) =>
@@ -78,7 +81,9 @@ function ContactForm() {
         />
       </label>
 
-      <label className={`flex flex-col gap-2 text-2xl text-ligthbrown font-medium`}>
+      <label
+        className={`flex flex-col gap-2 text-2xl text-ligthbrown font-medium`}
+      >
         Mensagem
         <textarea
           onChange={(e) =>
@@ -100,7 +105,7 @@ function ContactForm() {
         >
           Enviar
         </Button>
-        <Toaster/>
+        <Toaster />
       </div>
     </form>
   );
