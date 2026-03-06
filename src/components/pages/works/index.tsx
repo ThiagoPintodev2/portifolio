@@ -34,7 +34,6 @@ function Work() {
               PORTIFÓLIO
             </h2>
             <hr className={`bg-[#232120] h-[2px] w-[12rem]`} />
-
             <div
               className={`flex flex-col my-[2rem] px-[2rem] w-[90%] items-center justify-center gap-[2rem] lg:flex-row
                 ounded-3xl items-center border-1 shadow-xl/40 border-white/5 rounded-2xl`}
@@ -50,6 +49,7 @@ function Work() {
                 alt="Project One mobile1 view"
               />
             </div>
+
             <div
               className={`flex flex-col w-[90%] rounded-3xl items-center border-1 
                 shadow-xl/40 border-white/5 lg:text-2xl`}
@@ -63,19 +63,30 @@ function Work() {
                 foco e pausa, temas e alarmes.
               </p>
             </div>
-            <div className={`flex flex-col w-[90%] rounded-3xl items-center mt-[2rem] py-[2rem] rounded-3xl items-center border-1 
-                shadow-xl/40 border-white/5`}>
-              <p className={`text-ligthbrown text-[1.4rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-center`}>
-                Tecnologias utilizadas: 
+            <div
+              className={`flex flex-col w-[90%] rounded-3xl items-center mt-[2rem] py-[2rem] rounded-3xl items-center border-1 
+                shadow-xl/40 border-white/5`}
+            >
+              <p
+                className={`text-ligthbrown text-[1.4rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-center`}
+              >
+                Tecnologias utilizadas:
               </p>
               <div
-              className={`flex flex-wrap gap-8 rounded-2xl justify-center px-[1rem] lg:text-[1rem] mt-[1rem]`}
+                className={`flex flex-wrap gap-8 rounded-2xl justify-center px-[1rem] lg:text-[1rem] mt-[1rem]`}
+              >
+                {Workskills.map((skill, i) => (
+                  <Skills key={i} skill={skill} />
+                ))}
+              </div>
+            </div>
+            <a
+              className={`text-ligthbrown text-[1.4rem] py-[2rem] font-poppins sm:text-[1.8rem] sm:px-[5rem] px-[3rem] text-center`}
+              target="_blank"
+              href="https://pomodoro-timer-by-thiago.netlify.app/"
             >
-              {Workskills.map((skill, i) => (
-                <Skills key={i} skill={skill} />
-              ))}
-            </div>
-            </div>
+              Visite o projeto - https://pomodoro-timer-by-thiago.netlify.app/
+            </a>
           </div>
         </div>
       </div>
